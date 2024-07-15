@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { nowPlaying, popular, topRated, upcoming } from "../../api";
+import { Loading } from "../../components/Loading";
 
 export const Home = () => {
   const [nowData, setNowData] = useState();
   const [popData, setPopData] = useState();
   const [topData, setTopData] = useState();
   const [upData, setUpData] = useState();
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     (async () => {
@@ -20,6 +22,7 @@ export const Home = () => {
         setPopData(popResult);
         setTopData(topResult);
         setUpData(upResult);
+        setIsLoading(false);
       } catch (error) {
         console.log(error);
       }
@@ -27,11 +30,12 @@ export const Home = () => {
   }, []);
 
   console.log(nowData);
+  console.log(isLoading);
   // console.log(`인기영화:  ${popData}`);
   // console.log(`평점 좋음: ${topData}`);
   // console.log(`개봉예정:  ${upData}`);
 
-  return <div>Home</div>;
+  return <>{isLoading ? <Loading /> : "HOME"}</>;
 };
 
 // *예외
