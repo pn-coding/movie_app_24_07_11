@@ -16,3 +16,12 @@ const url = (urlName) => {
 
 export const nowPlaying = () =>
   fetch(url("movie/now_playing"), options).then((res) => res.json());
+
+export const popular = () =>
+  fetch(url("movie/popular"), options).then((res) => res.json());
+
+export const topRated = () =>
+  fetch(url("movie/top_rated"), options).then((res) => res.json());
+
+export const upcoming = () =>
+  fetch(url("movie/upcoming"), options).then((res) => res.json());

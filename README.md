@@ -2,7 +2,7 @@
 
 - [x] Router 설정
 - [x] 각 컴포넌트, 폴더 등 설정
-- [ ] Api 설정
+- [x] Api 설정
 - [ ] Header, Footer 컴포넌트 구성
 - [ ] Loading 컴포넌트 구성
 - [ ] 웹폰트 설정
