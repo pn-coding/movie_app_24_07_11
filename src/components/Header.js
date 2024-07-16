@@ -13,6 +13,10 @@ const Container = styled.header`
   left: 0;
   width: 100%;
   z-index: 10;
+
+  @media screen and (max-width: 768px) {
+    padding: 20px ${spacing.moSide};
+  }
 `;
 
 const LOGO = styled.div`
@@ -29,6 +33,12 @@ const Menu = styled.ul`
   font-weight: 600;
   li {
     margin-left: 150px;
+  }
+
+  @media screen and (max-width: 768px) {
+    li {
+      margin-left: 50px;
+    }
   }
 `;
 

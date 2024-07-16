@@ -26,6 +26,21 @@ const MainBanner = styled.section`
     opacity: 0.7;
     font-weight: 300;
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 550px ${spacing.moSide} 0 ${spacing.moSide};
+    h3 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      max-width: 500px;
+      width: 100%;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
 `;
 
 const BlackBg = styled.div`

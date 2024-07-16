@@ -7,6 +7,7 @@ export const colors = {
 
 export const spacing = {
   side: "100px",
+  moSide: "20px",
 };
 
 export const GlobalStyled = createGlobalStyle`
@@ -19,6 +20,7 @@ export const GlobalStyled = createGlobalStyle`
         background-color: #1d1d1d;
         color: white;
         letter-spacing: -1px;
+        word-break: keep-all;
     }
     a{
         text-decoration: none;
