@@ -22,8 +22,14 @@ export const GlobalStyled = createGlobalStyle`
         letter-spacing: -1px;
         word-break: keep-all;
     }
+
     a{
         text-decoration: none;
         color: white;
+    }
+
+    img{
+      width: 100%;
+      display: block;
     }
 `;
