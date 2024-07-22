@@ -6,6 +6,7 @@ import { PageNotFound } from "./pages/PageNotFound";
 import { routes } from "./routes";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import { TextCom } from "./pages/TextCom";
 
 const Router = () => {
   return (
@@ -15,6 +16,7 @@ const Router = () => {
         <Route path={routes.home} element={<Home />} />
         <Route path={routes.detail} element={<Detail />} />
         <Route path={routes.search} element={<Search />} />
+        <Route path={"test"} element={<TextCom />} />
         <Route path="/*" element={<PageNotFound />} />
       </Routes>
       <Footer />
