@@ -4,7 +4,6 @@ import { Loading } from "../../components/Loading";
 import { Movies } from "./components/Movies";
 import { MainBanner } from "./components/MainBanner";
 import "swiper/css";
-import { Helmet } from "react-helmet-async";
 import { PageTitle } from "../../components/PageTitle";
 
 export const Home = () => {

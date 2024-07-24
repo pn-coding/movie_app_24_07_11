@@ -75,7 +75,7 @@ export const Detail = () => {
         console.log(error);
       }
     })();
-  }, []);
+  }, [movieId]);
 
   return (
     <div>
